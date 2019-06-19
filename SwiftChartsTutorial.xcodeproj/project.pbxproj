@@ -14,6 +14,9 @@
 		7A8113F222BAE25500921E40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8113F022BAE25500921E40 /* LaunchScreen.storyboard */; };
 		7A8113FD22BAE25600921E40 /* SwiftChartsTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8113FC22BAE25600921E40 /* SwiftChartsTutorialTests.swift */; };
 		7A81140822BAE25600921E40 /* SwiftChartsTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A81140722BAE25600921E40 /* SwiftChartsTutorialUITests.swift */; };
+		7A81141622BAE3D800921E40 /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A81141522BAE3D800921E40 /* PieChartViewController.swift */; };
+		7A81141822BAE40E00921E40 /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A81141722BAE40E00921E40 /* LineChartViewController.swift */; };
+		7A81141A22BAE44700921E40 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A81141922BAE44700921E40 /* BarChartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		7A81140322BAE25600921E40 /* SwiftChartsTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftChartsTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A81140722BAE25600921E40 /* SwiftChartsTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChartsTutorialUITests.swift; sourceTree = "<group>"; };
 		7A81140922BAE25600921E40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A81141522BAE3D800921E40 /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
+		7A81141722BAE40E00921E40 /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
+		7A81141922BAE44700921E40 /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				7A8113EE22BAE25500921E40 /* Assets.xcassets */,
 				7A8113F022BAE25500921E40 /* LaunchScreen.storyboard */,
 				7A8113F322BAE25500921E40 /* Info.plist */,
+				7A81141522BAE3D800921E40 /* PieChartViewController.swift */,
+				7A81141722BAE40E00921E40 /* LineChartViewController.swift */,
+				7A81141922BAE44700921E40 /* BarChartViewController.swift */,
 			);
 			path = SwiftChartsTutorial;
 			sourceTree = "<group>";
@@ -256,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A81141622BAE3D800921E40 /* PieChartViewController.swift in Sources */,
+				7A81141822BAE40E00921E40 /* LineChartViewController.swift in Sources */,
 				7A8113EA22BAE25500921E40 /* ViewController.swift in Sources */,
 				7A8113E822BAE25500921E40 /* AppDelegate.swift in Sources */,
+				7A81141A22BAE44700921E40 /* BarChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

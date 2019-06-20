@@ -27,6 +27,9 @@
                                 <rect key="frame" x="97" y="433" width="221" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Bar Chart"/>
+                                <connections>
+                                    <segue destination="nmQ-Vn-7l3" kind="show" id="aYC-8u-a7K"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AY-NX-tl4">
                                 <rect key="frame" x="97" y="334" width="221" height="30"/>
@@ -46,7 +49,7 @@
         <!--Pie Chart View Controller-->
         <scene sceneID="729-US-gA1">
             <objects>
-                <viewController id="ofd-eT-LDh" customClass="PieChartViewController" customModule="SwiftChartsTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ofd-eT-LDh" customClass="PieChartViewController" customModule="SwiftChartsTutorial" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mo9-mf-K5z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,20 +76,35 @@
             </objects>
             <point key="canvasLocation" x="2187" y="-27"/>
         </scene>
-        <!--View Controller-->
+        <!--Bar Chart View Controller-->
         <scene sceneID="d0H-0J-tp6">
             <objects>
-                <viewController id="nmQ-Vn-7l3" sceneMemberID="viewController">
+                <viewController id="nmQ-Vn-7l3" customClass="BarChartViewController" customModule="SwiftChartsTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="scP-qH-HoG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewb-cA-l8n" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="198" width="374" height="280"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eqj-Wk-j1E" firstAttribute="bottom" secondItem="ewb-cA-l8n" secondAttribute="bottom" constant="384" id="YHs-kn-k5p"/>
+                            <constraint firstItem="eqj-Wk-j1E" firstAttribute="trailing" secondItem="ewb-cA-l8n" secondAttribute="trailing" constant="20" id="a8U-z3-kF7"/>
+                            <constraint firstItem="ewb-cA-l8n" firstAttribute="top" secondItem="eqj-Wk-j1E" secondAttribute="top" constant="110" id="tYf-iF-fho"/>
+                            <constraint firstItem="ewb-cA-l8n" firstAttribute="leading" secondItem="eqj-Wk-j1E" secondAttribute="leading" constant="20" id="uH2-qK-DNH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eqj-Wk-j1E"/>
                     </view>
+                    <connections>
+                        <outlet property="barChartView" destination="ewb-cA-l8n" id="yX2-5R-hRn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Alg-HG-yIm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2174" y="788"/>
+            <point key="canvasLocation" x="2173.913043478261" y="787.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yhJ-aZ-rtM">

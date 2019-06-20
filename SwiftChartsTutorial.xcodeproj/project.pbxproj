@@ -18,6 +18,7 @@
 		7A81141622BAE3D800921E40 /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A81141522BAE3D800921E40 /* PieChartViewController.swift */; };
 		7A81141822BAE40E00921E40 /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A81141722BAE40E00921E40 /* LineChartViewController.swift */; };
 		7A81141A22BAE44700921E40 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A81141922BAE44700921E40 /* BarChartViewController.swift */; };
+		7A81141E22BBCC7F00921E40 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A81141922BAE44700921E40 /* BarChartViewController.swift */; };
 		8157CA19350BDF986A886B2E /* Pods_SwiftChartsTutorialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F2C232F1B8A58382C245B7 /* Pods_SwiftChartsTutorialTests.framework */; };
 		A3F893A4A920F2E7C51F0C79 /* Pods_SwiftChartsTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96FC29DAD28716189B52BF8 /* Pods_SwiftChartsTutorial.framework */; };
 /* End PBXBuildFile section */
@@ -413,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A8113FD22BAE25600921E40 /* SwiftChartsTutorialTests.swift in Sources */,
+				7A81141E22BBCC7F00921E40 /* BarChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
